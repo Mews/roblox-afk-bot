@@ -42,7 +42,7 @@ class App(tk.Tk):
             else:
                 self.activeLabel.config(text="Bot is not running!", foreground="red")
 
-        self.after(1000, self.loop)
+        self.after(1000+rand.randint(0,750), self.loop)
 
 
     def toggle(self):
